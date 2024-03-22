@@ -22,14 +22,14 @@ body {
 .col-md-6 {
     margin-top: 100px;
 }
-.im,#skills {
+.im, #skills {
     color: white;
     font-family: "Sora", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
 }
-.name ,.multiple-text{
+.name, .multiple-text {
     font-family: 'Times New Roman', Times, serif;
     font-weight: 400;
     font-style: normal;
@@ -39,6 +39,13 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+/* Style for mobile view */
+@media (max-width: 768px) {
+    .col-md-4 {
+        align-self: flex-start; /* Adjust the top position */
+        margin-top: 30px; /* Add margin for spacing */
+    }
+}
 </style>
 </head>
 <body>
@@ -47,10 +54,6 @@ body {
         <div class="container-fluid">
             <div class="row justify-content-center">
                 <div class="col-md-6">
-                    <!-- Right Half - My Photo -->
-                <div class="col-md-4">
-                    <img src="https://rohanpashikanti.github.io/portfolio/hello.png" alt="Dodagatta Nihar" class="img-fluid">
-                </div>
                     <h3 class="im">Hello I'm</h3>
                     <h1 class="name">PASHIKANTI ROHAN</h1>
                     <!-- Text Animation -->
@@ -58,7 +61,10 @@ body {
                         <span class="multiple-text"></span>
                     </h4>
                 </div>
-                
+                <!-- Right Half - My Photo -->
+                <div class="col-md-4 align-self-md-start">
+                    <img src="https://rohanpashikanti.github.io/portfolio/hello.png" alt="Dodagatta Nihar" class="img-fluid">
+                </div>
             </div>
         </div>
     </div>
