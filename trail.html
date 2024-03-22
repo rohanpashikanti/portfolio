@@ -9,105 +9,225 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon+SC&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon+SC&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 <style>
-body {
-    margin: 0%;
-    background-color: black;
-}
-.page1 {
-    margin-top: 10%;
-    justify-self: center;
-    justify-content: center;
-}
-.col-md-6 {
-    margin-top: 100px;
-}
-.im, #skills {
-    color: white;
-    font-family: "Sora", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-}
-.name, .multiple-text {
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 400;
-    font-style: normal;
-    color: #6157FF;
-    background-image: -webkit-linear-gradient(180deg, #6157FF 35%, #EE49FD 57%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-/* Style for mobile view */
-@media (max-width: 768px) {
-    .col-md-4 {
-        align-self: flex-start; /* Adjust the top position */
-        margin-top: 30px; /* Add margin for spacing */
+    body {
+        margin: 0%;
+        background-color: black;
     }
-}
+    .page {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .page2 {
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin-top: -10%;
+    }
+    .edu {
+        color: white;
+        font-family: "Sora", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+    .card {
+        border: none;
+        border-radius: 10px;
+        height: 270px;
+        width: 300px;
+        margin: 10px;
+    }
+    .card-body {
+        height: 150px;
+        background-color: #333;
+    }
+    .col-md-6 {
+        margin-top: 100px;
+    }
+    .im, #skills {
+        color: white;
+        font-family: "Sora", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+    }
+    .card:hover{
+        box-shadow: rgba(225, 225, 230, 0.299) 0px 5px 20px;
+        transform: translateY(-10px);
+    }
+    .name, .multiple-text {
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 400;
+        font-style: normal;
+        color: #6157FF;
+        background-image: -webkit-linear-gradient(180deg, #6157FF 35%, #EE49FD 57%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .d-inline-block {
+        padding: 15px;
+        border-radius: 50%;
+        border: none;
+        justify-content: center;
+        transition: transform 0.3s ease;
+    }
+    .d-inline-block:hover {
+        transform: translateY(-5px);
+        color: #6157FF;
+        background-image: -webkit-linear-gradient(180deg, #6157FF 35%, #EE49FD 57%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .db {
+        padding: 10px 20px; 
+        background-color: #ddd;
+        border: none;
+        color: black;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 16px;
+    }
+    .db:hover{
+        border: none;
+        color: #6157FF;
+        background-image: -webkit-linear-gradient(180deg, #6157FF 35%, #EE49FD 57%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    @media (max-width: 890px) {
+        .name {
+            font-size: 80px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 400;
+            font-style: normal;
+            color: #6157FF;
+            background-image: -webkit-linear-gradient(180deg, #6157FF 35%, #EE49FD 57%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
 </style>
 </head>
 <body>
-<div class="page1">
-    <div class="body-section">
-        <div class="container-fluid">
-            <div class="row justify-content-center">
-                <div class="col-md-6">
-                    <h3 class="im">Hello I'm</h3>
-                    <h1 class="name">PASHIKANTI ROHAN</h1>
-                    <!-- Text Animation -->
-                    <h4 id="skills">And I'm good at
-                        <span class="multiple-text"></span>
-                    </h4>
-                </div>
-                <!-- Right Half - My Photo -->
-                <div class="col-md-4 align-self-md-start">
-                    <img src="https://rohanpashikanti.github.io/portfolio/hello.png" alt="Dodagatta Nihar" class="img-fluid">
+    <div class="page page1">
+        <div class="body-section">
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <h3 class="im">Hello I'm</h3>
+                        <h1 class="name">PASHIKANTI ROHAN</h1>
+                        <!-- Text Animation -->
+                        <h4 id="skills">And I'm good at
+                            <span class="multiple-text"></span>
+                        </h4>
+                        <br>
+                        <!-- Social Icons -->
+                        <div class="footer-social-icon">
+                            <ul class="mb-0">
+                                <li class="d-inline-block">
+                                    <a href="https://www.linkedin.com/in/rohan-pashikanti-b84894298" target="_blank" class="text-white"><i class="fab fa-linkedin-in d-flex align-items-center justify-content-center"></i></a>
+                                </li>
+                                <li class="d-inline-block">
+                                    <a href="https://github.com/rohanpashikanti/" target="_blank" class="text-white"><i class="fab fa-github d-flex align-items-center justify-content-center"></i></a>
+                                </li>
+                                <li class="d-inline-block">
+                                    <a href="https://leetcode.com/rohanpashikanti/" target="_blank" class="text-white"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104a5.35 5.35 0 0 0-.125.513a5.527 5.527 0 0 0 .062 2.362a5.83 5.83 0 0 0 .349 1.017a5.938 5.938 0 0 0 1.271 1.818l4.277 4.193l.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019l-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523a2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0m-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382a1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382a1.38 1.38 0 0 0-1.38-1.382z"/></svg></a>
+                                </li>
+                                <li class="d-inline-block">
+                                    <a href="https://www.instagram.com/rohanpashikanti/" target="_blank" class="text-white"><i class="fab fa-instagram d-flex align-items-center justify-content-center"></i></a>
+                                </li>
+                                <li class="d-inline-block" ><button class="db">Download CV</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4 align-self-md-start">
+                        <img src="https://rohanpashikanti.github.io/portfolio/hello.png" alt="Dodagatta Nihar" class="img-fluid">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script>
-const skills = document.querySelector('.multiple-text');
-const skillList = ['Full stack developer', 'Web developer', 'Back-end developer', 'Cloud enthusiast'];
-let currentIndex = 0;
-let currentSkill = '';
-let typingSpeed = 120;
-let eraseSpeed = 60;
+    <div class="page page2">
+        <div class="container text-center">
+            <h2 class="education" style="color: white;">Education</h2>
+            <div class="edu">
+                <div class="card">
+                    <img src="/Users/rohanpashikanti/desktop/schl.png" style="height: 200px;" class="card-img-top" alt="Placeholder Image">
+                    <div class="card-body">
+                        <p class="card-text">Greenwood High School</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/Users/rohanpashikanti/desktop/clg.png" style="height: 200px;" class="card-img-top" alt="Placeholder Image">
+                    <div class="card-body">
+                        <p class="card-text">Narayana Jr College</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/Users/rohanpashikanti/desktop/sru.png" style="height: 200px;" class="card-img-top" alt="Placeholder Image">
+                    <div class="card-body">
+                        <p class="card-text">SR University</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        const skills = document.querySelector('.multiple-text');
+        const skillList = ['Full stack developer', 'Web developer', 'Back-end developer', 'Cloud enthusiast'];
+        let currentIndex = 0;
+        let currentSkill = '';
+        let typingSpeed = 120;
+        let eraseSpeed = 60;
 
-function typeSkill() {
-    currentSkill = skillList[currentIndex];
-    skills.textContent = '';
-    let i = 0;
-    const typeInterval = setInterval(() => {
-        skills.textContent += currentSkill.charAt(i);
-        i++;
-        if (i > currentSkill.length) {
-            clearInterval(typeInterval);
-            setTimeout(eraseSkill, 2000);
+        function typeSkill() {
+            currentSkill = skillList[currentIndex];
+            skills.textContent = '';
+            let i = 0;
+            const typeInterval = setInterval(() => {
+                skills.textContent += currentSkill.charAt(i);
+                i++;
+                if (i > currentSkill.length) {
+                    clearInterval(typeInterval);
+                    setTimeout(eraseSkill, 2000);
+                }
+            }, typingSpeed);
         }
-    }, typingSpeed);
-}
 
-function eraseSkill() {
-    let i = currentSkill.length - 1;
-    const eraseInterval = setInterval(() => {
-        skills.textContent = currentSkill.substring(0, i);
-        i--;
-        if (i < 0) {
-            clearInterval(eraseInterval);
-            currentIndex = (currentIndex + 1) % skillList.length;
-            setTimeout(typeSkill, 1000);
+        function eraseSkill() {
+            let i = currentSkill.length - 1;
+            const eraseInterval = setInterval(() => {
+                skills.textContent = currentSkill.substring(0, i);
+                i--;
+                if (i < 0) {
+                    clearInterval(eraseInterval);
+                    currentIndex = (currentIndex + 1) % skillList.length;
+                    setTimeout(typeSkill, 1000);
+                }
+            }, eraseSpeed);
         }
-    }, eraseSpeed);
-}
 
-typeSkill();
-</script>
+        typeSkill();
+    </script>
 </body>
 </html>
