@@ -346,6 +346,103 @@
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
             }
+            .page4 {
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .blog-container {
+                display: flex;
+                flex-wrap: nowrap;
+                overflow-x: auto;
+                overflow-y: hidden;
+                width: 90%;
+                max-width: 1200px;
+                height: 440px;
+                padding: 20px 0;
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+            }
+            .blog-container::-webkit-scrollbar {
+                display: none;
+            }
+            .blog-card {
+                flex: 0 0 auto;
+                background-color: #333;
+                border-radius: 10px;
+                overflow: hidden;
+                width: 300px;
+                height: 420px;
+                margin-right: 20px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s ease;
+            }
+            .blog-image {
+                width: 100%;
+                height: 180px;
+                object-fit: cover;
+            }
+            .blog-info {
+                padding: 15px;
+                height: 230px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+            .blog-title {
+                color: white;
+                font-family: "Sora", sans-serif;
+                margin-bottom: 10px;
+                font-size: 18px;
+            }
+            .blog-description {
+                color: #ccc;
+                font-family: "Sora", sans-serif;
+                font-size: 14px;
+                margin-bottom: 15px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+            }
+            .read-more-button {
+                padding: 10px 20px; 
+                background-color: #ddd;
+                border: none;
+                color: black;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                margin: 4px 2px;
+                cursor: pointer;
+                border-radius: 16px;
+            }
+            .read-more-button:hover {
+                border: none;
+                color: #6157FF;
+                background-image: -webkit-linear-gradient(180deg, #6157FF 35%, #EE49FD 57%);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            @media (max-width: 780px) {
+                .blog-card {
+                    width: 250px;
+                    height: 400px;
+                }
+                .blog-image {
+                    height: 160px;
+                }
+                .blog-title {
+                    font-size: 16px;
+                }
+                .blog-description {
+                    font-size: 12px;
+                }
+            }
         </style>
     </head>
     <body>
@@ -517,6 +614,43 @@
                 </div>
             </div>
         </div>
+        <div class="page4">
+            <h2 class="sk">MY BLOGS - The AI Chronicles</h2>
+            <section class="blog-container">
+                <article class="blog-card">
+                    <img src="https://rohanpashikanti.github.io/portfolio/b1.png" alt="AI is everything in today's era" class="blog-image">
+                    <div class="blog-info">
+                        <h3 class="blog-title">AI is everything in today's era</h3>
+                        <p class="blog-description">Explore how AI can be applied in various tasks, with real-time examples illustrating its impact on daily life. This post emphasizes the necessity of training AI models to meet user needs effectively.</p>
+                        <a href="#" class="read-more-button">Read More</a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <img src="https://rohanpashikanti.github.io/portfolio/b2.png0" alt="Full Stack Project Process" class="blog-image">
+                    <div class="blog-info">
+                        <h3 class="blog-title">Building a Full Stack Project: Setup</h3>
+                        <p class="blog-description">This blog covers the initial setup for a full-stack project using React, Node, and Express. It outlines the tools and configurations needed to kickstart your development process.</p>
+                        <a href="#" class="read-more-button">Read More</a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <img src="https://rohanpashikanti.github.io/portfolio/b3.png" alt="Full Stack Project Development" class="blog-image">
+                    <div class="blog-info">
+                        <h3 class="blog-title">Developing a Full Stack Project: Midway</h3>
+                        <p class="blog-description">Delve into the middle stages of your full-stack project, focusing on integrating front-end and back-end components. Learn best practices for API development and data handling.</p>
+                        <a href="#" class="read-more-button">Read More</a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <img src="/api/placeholder/300/180" alt="Full Stack Project Completion" class="blog-image">
+                    <div class="blog-info">
+                        <h3 class="blog-title">Completing Your Full Stack Project</h3>
+                        <p class="blog-description">In this final installment, we discuss deployment and optimization strategies for your full-stack application. Ensure your project is production-ready and accessible to users.</p>
+                        <a href="#" class="read-more-button">Read More</a>
+                    </div>
+                </article>
+            </section>
+        </div>        
         <div class="page5" id="contact">
             <center><h2 class="sk">Contact</h2></center><br>
             <div class="ic" style="text-align: center;">
