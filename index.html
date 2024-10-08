@@ -193,9 +193,10 @@
                 z-index: 1000;
             }
             
+            /* Add this CSS to allow horizontal scrolling for the navigation links */
             .Nav2 {
                 display: flex;
-                justify-content: space-around;
+                justify-content: flex-start; /* Align items to the start */
                 align-items: center;
                 height: 5vh;
                 width: 100%;
@@ -203,6 +204,13 @@
                 background-color: rgba(0, 0, 0, 0.906);
                 border-radius: 14px;
                 padding: 0 10px;
+                overflow-x: auto; /* Enable horizontal scrolling */
+                white-space: nowrap; /* Prevent links from wrapping to the next line */
+                scrollbar-width: none; /* Hide scrollbar for Firefox */
+            }
+            
+            .Nav2::-webkit-scrollbar {
+                display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
             }
             
             .Nav2 a {
@@ -213,17 +221,20 @@
                 font-optical-sizing: auto;
                 font-weight: 600;
                 font-style: normal;
-                margin: 0 5px;
+                margin: 0 10px; /* Increase spacing between links */
                 position: relative;
                 cursor: pointer;
                 font-size: 14px;
+                flex-shrink: 0; /* Prevent links from shrinking */
             }
             
             @media (max-width: 480px) {
                 .Nav2 a {
                     font-size: 12px;
+                    margin: 0 8px; /* Adjust spacing for smaller screens */
                 }
             }
+
             @media (max-width: 780px) {
                 .col-md-4.align-self-md-start {
                     -ms-flex: 0 0 50%;
